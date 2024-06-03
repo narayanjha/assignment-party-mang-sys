@@ -1,0 +1,34 @@
+<div class="d-flex justify-content-center align-items-center">
+<div class="card py-2 px-4">
+  <form style="min-width: 350px" [formGroup]="loginForm">
+    <h4 class="text-center pt-2">Login</h4>
+    <div class="form-group mb-3">
+      <label for="email">Username</label>
+      <input
+        type="email"
+        class="form-control"
+        placeholder="Enter Username"
+        formControlName="username"
+      />
+      @if((submitted || frm['username'].touched) && frm['username'].invalid){
+      <div class="text-danger mt-1">Username is required.</div>
+      }
+    </div>
+    <div class="form-group mb-3">
+      <label for="password">Password</label>
+      <input
+        type="password"
+        class="form-control"
+        placeholder="Enter Password"
+        formControlName="password"
+      />
+      @if((submitted || frm['password'].touched)&&frm['password'].invalid){
+      <div class="text-danger mt-1">Username is required.</div>
+      }
+    </div>
+    <div class="form-group text-center py-2">
+      <button class="btn btn-primary" (click)="submit()">Login</button>
+    </div>
+  </form>
+</div>
+</div>

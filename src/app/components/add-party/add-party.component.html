@@ -1,0 +1,222 @@
+<div class="container mb-2">
+  <div class="card py-2 px-4">
+    <div class="row mt-4">
+      <div class="col-md-10">
+        <strong>{{ heading }}</strong>
+      </div>
+      <div class="col-md-2 d-flex justify-content-end">
+        <button class="btn btn-dark" type="button" (click)="goToBack()">
+          Back
+        </button>
+      </div>
+      <form [formGroup]="addEditPartyForm" class="row">
+        <div class="form-group col-md-4 mb-2">
+          <label for="productName">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            formControlName="name"
+            [readOnly]="viewId"
+          />
+          @if((submitted || frm['name'].touched) && frm['name'].invalid){
+          <div class="text-danger mt-1">Name is required.</div>
+          }
+        </div>
+        <div class="form-group col-md-4 mb-2">
+          <label for="productName">Company Name</label>
+          <input
+            type="text"
+            class="form-control"
+            formControlName="company_name"
+            [readOnly]="viewId"
+          />
+          @if((submitted || frm['company_name'].touched) &&
+          frm['company_name'].invalid){
+          <div class="text-danger mt-1">Company name is required.</div>
+          }
+        </div>
+        <div class="form-group col-md-4 mb-2">
+          <label for="productName">Mobile No.</label>
+          <input
+            type="text"
+            class="form-control"
+            formControlName="mobile_no"
+            [readOnly]="viewId"
+            placeholder="+919999988888"
+          />
+          @if((submitted || frm['mobile_no'].touched) &&
+          frm['mobile_no'].invalid){
+          <div class="text-danger mt-1">Mobile number is required.</div>
+          }
+        </div>
+        <div class="form-group col-md-4 mb-2">
+          <label for="productName">Telephone No.</label>
+          <input
+            type="text"
+            class="form-control"
+            formControlName="telephone_no"
+            [readOnly]="viewId"
+          />
+          @if((submitted || frm['telephone_no'].touched) &&
+          frm['telephone_no'].invalid){
+          <div class="text-danger mt-1">Telephone number is required.</div>
+          }
+        </div>
+        <div class="form-group col-md-4 mb-2">
+          <label for="productName">WhatsAapp No</label>
+          <input
+            type="text"
+            class="form-control"
+            formControlName="whatsapp_no"
+            [readOnly]="viewId"
+          />
+          @if((submitted || frm['whatsapp_no'].touched) &&
+          frm['whatsapp_no'].invalid){
+          <div class="text-danger mt-1">WhatsAapp number is required.</div>
+          }
+        </div>
+        <div class="form-group col-md-4 mb-2">
+          <label for="productName">Email</label>
+          <input
+            type="text"
+            class="form-control"
+            formControlName="email"
+            [readOnly]="viewId"
+          />
+          @if((submitted || frm['email'].touched) && frm['email'].invalid){
+          <div class="text-danger mt-1">Email ID is required.</div>
+          }
+        </div>
+        <div class="form-group col-md-4 mb-2">
+          <label for="productName">Remark</label>
+          <input
+            type="text"
+            class="form-control"
+            formControlName="remark"
+            [readOnly]="viewId"
+          />
+          @if((submitted || frm['remark'].touched) && frm['remark'].invalid){
+          <div class="text-danger mt-1">Remark is required.</div>
+          }
+        </div>
+        <div class="form-group col-md-4 mb-2">
+          <label for="productName">Login Access </label>
+          <input
+            type="text"
+            class="form-control"
+            formControlName="login_access"
+            [readOnly]="viewId"
+          />
+          @if((submitted || frm['login_access'].touched) &&
+          frm['login_access'].invalid){
+          <div class="text-danger mt-1">Login access is required.</div>
+          }
+        </div>
+        <div class="form-group col-md-4 mb-2">
+          <label for="productName">Date Of Birth </label>
+          <input
+            type="date"
+            class="form-control"
+            formControlName="date_of_birth"
+            [readOnly]="viewId"
+          />@if((submitted || frm['date_of_birth'].touched) &&
+          frm['date_of_birth'].invalid){
+          <div class="text-danger mt-1">Date of birth is required.</div>
+          }
+        </div>
+        <div class="form-group col-md-4 mb-2">
+          <label for="productName">Anniversary Date </label>
+          <input
+            type="text"
+            class="form-control"
+            formControlName="anniversary_date"
+            [readOnly]="viewId" 
+          />
+          @if((submitted || frm['anniversary_date'].touched) &&
+          frm['anniversary_date'].invalid){
+          <div class="text-danger mt-1">Anniversary date is required.</div>
+          }
+        </div>
+        <div class="form-group col-md-4 mb-2">
+          <label for="productName">GSTIN No </label>
+          <input type="text" class="form-control" formControlName="gstin" [readOnly]="viewId"  />
+          @if((submitted || frm['gstin'].touched) && frm['gstin'].invalid){
+          <div class="text-danger mt-1">GSTIN No is required.</div>
+          }
+        </div>
+        <div class="form-group col-md-4 mb-2">
+          <label for="productName">PAN Number </label>
+          <input type="text" class="form-control" formControlName="pan_no" [readOnly]="viewId"  />
+          @if((submitted || frm['pan_no'].touched) && frm['pan_no'].invalid){
+          <div class="text-danger mt-1">PAN Number is required.</div>
+          }
+        </div>
+        <div class="form-group col-md-4 mb-2">
+          <label for="productName">Apply TDS </label>
+          <input type="text" class="form-control" formControlName="apply_tds" [readOnly]="viewId" />
+          @if((submitted || frm['apply_tds'].touched) &&
+          frm['apply_tds'].invalid){
+          <div class="text-danger mt-1">Apply TDS is required.</div>
+          }
+        </div>
+        <div class="form-group col-md-4 mb-2">
+          <label for="productName">Credit Limit</label>
+          <input
+            type="text"
+            class="form-control"
+            formControlName="credit_limit"
+            [readOnly]="viewId" 
+          />
+          @if((submitted || frm['credit_limit'].touched) &&
+          frm['credit_limit'].invalid){
+          <div class="text-danger mt-1">Credit limit is required.</div>
+          }
+        </div>
+        <div class="form-group mb-2">
+          <label for="productName">Address</label>
+          <textarea
+            rows="3"
+            class="form-control"
+            formControlName="address"
+            [readOnly]="viewId" 
+          ></textarea>
+          @if((submitted || frm['address'].touched) && frm['address'].invalid){
+          <div class="text-danger mt-1">Address is required.</div>
+          }
+        </div>
+        <div class="form-group mb-2">
+          <label for="productName">Bank</label>
+          <textarea
+            rows="3"
+            class="form-control"
+            formControlName="bank"
+            [readOnly]="viewId" 
+          ></textarea>
+          @if((submitted || frm['bank'].touched) && frm['bank'].invalid){
+          <div class="text-danger mt-1">Bank is required.</div>
+          }
+        </div>
+        <div class="form-group mb-2">
+          <label for="productName">Image</label>
+          <input type="text" class="form-control" formControlName="image" [readOnly]="viewId" />
+        </div>
+        <div class="form-group mt-3">
+          <button
+            class="btn btn-primary"
+            *ngIf="!getId"
+            (click)="addNewParty()"
+          >
+            Add Party
+          </button>
+          <button
+            class="btn btn-primary"
+            *ngIf="editId"
+            (click)="updateParty()"
+          >
+            Update
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

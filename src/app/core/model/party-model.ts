@@ -1,0 +1,19 @@
+export class party {
+  name!:string;
+  company_name!:string;
+  mobile_no!:number;
+  telephone_no!:number;
+  whatsapp_no!:number;
+  email!:string;
+  remark!:string;
+  login_access!:boolean;
+  date_of_birth!:string;
+  anniversary_date!:string;
+  gstin!:string;
+  pan_no!:string;
+  apply_tds!:boolean;
+  credit_limit!:number;
+  address!:string;
+  bank!:string;
+  image!:string
+  }

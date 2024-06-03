@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="card py-2 px-4">
+    <div class="row mt-4">
+      <div class="col-md-10">
+        <strong>All Party List</strong>
+      </div>
+      <div class="col-md-2 d-flex justify-content-end">
+        <button
+          class="btn btn-dark"
+          type="button"
+          (click)="addPartyPopup()"
+        >
+          Add Party
+        </button>
+      </div>
+    </div>
+    <app-party-list [partyData]="partyDataList" (dataSend)="getPartyList($event)" ></app-party-list>
+  </div>
+</div>

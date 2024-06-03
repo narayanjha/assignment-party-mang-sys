@@ -1,0 +1,31 @@
+{
+  "user": [
+    {
+      "id": "1",
+      "username": "narayanjha",
+      "password": "pass@123"
+    }
+  ],
+  "party": [
+    {
+      "name": "Narayan Jha",
+      "company_name": "Narayan Jha & company",
+      "mobile_no": "9999002088",
+      "telephone_no": "9999002088",
+      "whatsapp_no": "9999002088",
+      "email": "jha_narayanji@yahoo.com",
+      "remark": "test",
+      "login_access": "test",
+      "date_of_birth": "2024-03-01",
+      "anniversary_date": "test",
+      "gstin": "test",
+      "pan_no": "test",
+      "apply_tds": "trt",
+      "credit_limit": "test",
+      "address": "936,GANDGRAM ,NAI BASTI FLR,CITY FOREST PARK",
+      "bank": "sadfd",
+      "image": "C:\\fakepath\\images.png",
+      "id": "237c"
+    }
+  ]
+}
